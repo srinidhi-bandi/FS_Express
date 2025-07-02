@@ -1,0 +1,16 @@
+html
+    head
+        link(rel='stylesheet', href='/style2.css')
+    body
+        h1= recipes.name
+        img(src="poha.jpg",)(style='width:250px')
+        h2 Ingredients
+        div
+            ul
+            each i in recipes.Ingredients 
+                li(style='color:green')=i
+        h2 Steps
+        div
+            ul
+            each s in recipes.Steps
+                li=s
